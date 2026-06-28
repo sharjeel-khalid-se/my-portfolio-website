@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #F8F7F3;
+  --color-brand-surface: #EFEDE8;
+  --color-brand-primary: #1A1A2E;
+  --color-brand-accent: #4F46E5;
+  --color-brand-accent-light: #EEF2FF;
+  --color-brand-text: #0F0F0F;
+  --color-brand-muted: #6B7280;
+  --color-brand-border: #E5E0D8;
+  --font-display: "Syne", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    cursor: none;
+    @apply bg-brand-bg text-brand-text font-body antialiased selection:bg-brand-accent selection:text-white;
+  }
+}
+
+/* Lenis Recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}

@@ -105,13 +105,13 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 2 }}
-            className="relative w-[280px] h-[280px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px]"
+            className="relative w-[380px] h-[380px] md:w-[400px] md:h-[400px] lg:w-[650px] lg:h-[650px]"
           >
             {/* Soft backdrop glow */}
-            <div className="absolute inset-0 bg-brand-accent/20 rounded-full blur-3xl transform translate-y-4" />
+            <div className="" />
             
             <motion.div 
-              className="w-full h-full relative rounded-full overflow-hidden shadow-2xl border-4 border-[#E5E0D8]/50"
+              className="w-full h-full relative  overflow-hidden"
               animate={{ y: [0, -15, 0] }}
               transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
             >
